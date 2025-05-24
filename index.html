@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌤️ Modern Hava Durumu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">🌤️ Modern Hava Durumu</div>
+        <div class="subtitle">Anlık ve Sonraki 3 Günlük Tahminler</div>
+        <div class="search-section">
+            <div class="input-group">
+                <input type="text" class="city-input" id="cityInput" placeholder="Şehir adını girin veya konum kullanın" />
+                <button class="search-btn" id="searchBtn" aria-label="Hava durumu ara"><span aria-hidden="true">🔍</span> Ara</button>
+                <button class="location-btn" id="locationBtn" aria-label="Konumumu kullan"><span aria-hidden="true">📍</span> Konum</button>
+            </div>
+            <div class="loading" id="loading">🔄 Hava durumu bilgileri getiriliyor...</div>
+        </div>
+        <div class="weather-display-area">
+            <div id="weatherResult"></div>
+            <div id="forecastResult"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
